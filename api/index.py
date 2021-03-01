@@ -19,6 +19,6 @@ def rekognition():
         MaxLabels=10
     )
 
-    return jsonify(res)
+    return jsonify(res['Labels'])
 
 app.run(debug=True)
